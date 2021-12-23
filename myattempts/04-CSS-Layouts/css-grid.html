@@ -40,8 +40,29 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+
+        display: none;
       }
 
+      .el--8{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+
+      .el--2 {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+      }
+
+      .el--6 {
+        
+      }
+ 
       .container--2 {
         /* STARTER */
         font-family: sans-serif;
@@ -53,6 +74,18 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /* Alñigning tracks inside conteiner: distributing empty space */
+        justify-content: center;
+        align-content: center;
+
+        /* aligning items inside cells */
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>
